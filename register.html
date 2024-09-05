@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doctor Registration</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+  <div class="flex items-center justify-center min-h-screen">
+    <div class="bg-white p-8 rounded-lg shadow-lg w-3/4 max-w-2xl">
+      <h2 class="text-2xl font-bold mb-6 text-center">Alumni Registration</h2>
+      <form class="space-y-6">
+
+        <!-- Name Input -->
+        <div>
+          <label for="name" class="block text-gray-700 font-semibold">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="w-full mt-2 p-3 border border-gray-300 rounded-lg"
+            required
+          />
+        </div>
+
+        <!-- Mobile Input -->
+        <div>
+            <label for="mobile" class="block text-gray-700 font-semibold">Mobile</label>
+            <input
+              type="tel"
+              id="mobile"
+              name="mobile"
+              class="w-full mt-2 p-3 border border-gray-300 rounded-lg"
+              required
+            />
+          </div>
+  
+        <!-- Email Input -->
+        <div>
+          <label for="email" class="block text-gray-700 font-semibold">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="w-full mt-2 p-3 border border-gray-300 rounded-lg"
+            required
+          />
+        </div>
+
+        <!-- Password Input -->
+        <!-- <div>
+          <label for="password" class="block text-gray-700 font-semibold">Set Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            class="w-full mt-2 p-3 border border-gray-300 rounded-lg"
+            required
+          />
+        </div> -->
+
+        <!-- Qualification Input -->
+        <div>
+          <label for="qualification" class="block text-gray-700 font-semibold">Qualification</label>
+          <input
+            type="text"
+            id="qualification"
+            name="qualification"
+            placeholder="Present Qualification"
+            class="w-full mt-2 p-3 border border-gray-300 rounded-lg"
+            required
+          />
+        </div>
+
+        <!-- Experience Input -->
+        <div>
+          <label for="experience" class="block text-gray-700 font-semibold">Experience (Years)</label>
+          <input
+            type="number"
+            id="experience"
+            name="experience"
+            class="w-full mt-2 p-3 border border-gray-300 rounded-lg"
+            required
+          />
+        </div>
+
+        <!-- Certificate Upload -->
+        <!-- <div>
+          <label for="certificate" class="block text-gray-700 font-semibold">Upload Certificate</label>
+          <input
+            type="file"
+            id="certificate"
+            name="certificate"
+            class="w-full mt-2 p-3 border border-gray-300 rounded-lg"
+            required
+          />
+        </div> -->
+
+        <!-- Description Textarea -->
+        <div>
+          <label for="description" class="block text-gray-700 font-semibold">Description</label>
+          <textarea
+            id="description"
+            name="description"
+            placeholder="Describe yourself (optional)"
+            class="w-full mt-2 p-3 border border-gray-300 rounded-lg h-24"
+          ></textarea>
+        </div>
+
+        <!-- Terms and Conditions Checkbox -->
+        <div class="flex items-center">
+          <input
+            type="checkbox"
+            id="termsAccepted"
+            name="termsAccepted"
+            class="w-5 h-5 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2"
+            required
+          />
+          <label for="termsAccepted" class="ml-2 text-gray-700">
+            I accept the terms and conditions of the website
+          </label>
+        </div>
+
+        <!-- Login Link -->
+        <p class="text-center">
+          Have an Account? <a href="/login" class="text-blue-600 font-semibold hover:underline">Login</a>
+        </p>
+
+        <!-- Submit Button -->
+        <button
+          type="submit"
+          class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-300"
+        >
+          Register
+        </button>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
